@@ -1,0 +1,8 @@
+Bu programı çalıştırabilmek için. Json Server yüklü olması lazım bunun içinde NodeJs bilgisayarınızda kurulu olması gerekiyor.
+NodeJS indirme linki: https://nodejs.org/en/download/current
+Cmd üzerinde bu kodu yazmanız lazım: npm install -g json-server
+Son olarak indirdiğiniz db klasorü içerisine gelip en üst tarafa cmd yazarak db klasörü içerisinde cmd çalışacaktır. Burada cmd ekranına:
+ 
+json-server --watch db.json
+
+yazalım. Ondan sonra visual studioya girip kodları çalıştırıp index.html sayfasını Live Server üzerinde çalıştıralım.

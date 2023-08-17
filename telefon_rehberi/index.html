@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telefon_Rehberi</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mt-5 shadows-sm rounded">
+        <div class="col-12 col-sm-4 p-3 d-none">
+        </div>
+
+        
+        <div class="col">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th class="d-none">Id</th>
+                <th>FırstName</th>
+                <th>LastName</th>
+                <th class="d-none d-sm-table-cell">Mail</th>
+                <th>Phone</th>
+                <th>Tools</th>
+                <th>New Person</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button> -->
+
+    <!-- Modal kısmı burası -->
+    <div
+      class="modal fade"
+      id="detailModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="detailModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="detailModal">Kişi Detay Kartı</h5>
+            <div class="form-group">
+              <button type="reset" class="btn shadow-sm btn-sm text-danger">
+                Clear
+              </button>
+              <button
+                id="save"
+                type="submit"
+                class="btn shadow-sm btn-sm float-right text-dark"
+              >
+                Save
+              </button>
+
+              <button
+                id="update"
+                type="button"
+                class="btn shadow-sm btn-sm float-right mr-1 text-warning  "
+              >
+                Update
+              </button>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12 col-sm-4 p-3">
+                <div id="alertId" class="alert alert-warning hide">
+                  <p>Lütfen tüm alanı doldurun.</p>
+                </div>
+                <div id="alertId2" class="alert alert-danger hide2">
+                  <p>Lütfen maili "@" formatında girin.</p>
+                </div>
+                <form action="">
+                  <input type="hidden" name="id" />
+      
+                  <div class="form-group">
+                    <label for="firstname">Adı : </label>
+                    <input
+                      type="text"
+                      name="firstname"
+                      id="firstname"
+                      class="form-control"
+                      maxlength="256"
+                      placeholder="Lütfen Adınızı Giriniz"
+                      required
+                    />
+                  </div>
+      
+                  <div class="form-group">
+                    <label for="lastname">Soyadı : </label>
+                    <input
+                      type="text"
+                      name="lastname"
+                      id="lastname"
+                      class="form-control"
+                      placeholder="Lütfen Soyadınızı Giriniz"
+                      required
+                    />
+                  </div>
+      
+                  <div class="form-group">
+                    <label for="mail">Mail : </label>
+                    <input
+                      type="email"
+                      name="mail"
+                      id="mail"
+                      class="form-control"
+                      placeholder="Lütfen Mail Adresinizi Giriniz"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">Telefon : </label>
+                    <input
+                      type="text"
+                      name="phone"
+                      id="phone"
+                      class="form-control"
+                      placeholder="Lütfen Telefon Numaranızı Giriniz"
+                    />
+            </div>
+          </div>
+
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn shadow-sm text-danger"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="index.js"></script>
+    <script></script>
+  </body>
+</html>
